@@ -48,6 +48,12 @@ h3 {
   align-content: space-around;
 }
 
+.box {
+  width: 15%;
+  position: relative;
+  height: 30%;
+}
+
 .stats-bar-section {
   border-radius: 20px;
   background-color: lightskyblue;
@@ -64,19 +70,62 @@ h3 {
   margin-top: 5px;
 }
 
-.box {
-    position: relative;
-    background-image: url('../images/lfz-card.jpg');
-    background-size: cover;
-    box-sizing: border-box;
-    height: 30%;
-    width: 15%;
+.lfz-card {
+  background-image: url('../images/lfz-card.jpg');
+  background-size: cover;
+  position: absolute;
+  box-sizing: border-box;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
 }
 
-.image-match {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: url("../images/css-logo.png");
-    background-size: cover;
+.css-logo, .docker-logo, .html-logo, .git-logo, .js-logo, .mysql-logo, .node-logo, .php-logo, .react-logo {
+  position: absolute;
+  box-sizing: border-box;
+  height: 150px;
+  width: 150px;
+  background-size: contain;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.css-logo {
+  background-image: url("../images/css-logo.png");
+}
+
+.docker-logo {
+  background-image: url("../images/docker-logo.jpg");
+}
+
+.git-logo {
+    background-image: url("../images/gitHub-logo.png");
+}
+
+.html-logo {
+    background-image: url("../images/html-logo.png");
+}
+
+.js-logo {
+    background-image: url("../images/js-logo.png");
+}
+
+.mysql-logo {
+    background-image: url("../images/mysql-logo.jpg");
+}
+
+.node-logo {
+    background-image: url("../images/node-logo.png");
+}
+
+.php-logo {
+    background-image: url("../images/php-logo.jpeg");
+}
+
+.react-logo {
+    background-image: url("../images/react-logo.png");
+}
+
+.hidden {
+  display:none;
 }
