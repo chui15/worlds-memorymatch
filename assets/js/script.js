@@ -5,6 +5,8 @@ var secondCardClicked = null;
 var matches = null;
 var firstCardClickedImage = null;
 var secondCardClickedImage = null;
+var max_matches = 9;
+var attempts = 0;
 
 function initializeApp(){
   $('.lfz-card').on('click', handleCardClick);
@@ -19,11 +21,17 @@ function handleCardClick( event ) {
     secondCardClicked = $(event.currentTarget);
     firstCardClickedImage = $(firstCardClicked).siblings()[0];
     secondCardClickedImage = $(secondCardClicked).siblings()[0];
-    console.log(firstCardClickedImage);
-    console.log(secondCardClickedImage);
     if ($(firstCardClickedImage).attr('class') === $(secondCardClickedImage).attr('class')) {
-      console.log('cards match');
-      matches +=1;
+      matches += 1;
+      console.log('cards match, match number is now: ', matches);
+      if (matches == max_matches) {
+        var modal = document.getElementById('modal');
+        $(modal).show();
+        var span = document.getElementsByClassName('close')[0];
+        $(span).on('click', function(){
+          $(modal).hide();
+        });
+      }
       firstCardClicked = null;
       secondCardClicked = null;
     } else {
