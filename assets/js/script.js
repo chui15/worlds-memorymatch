@@ -7,9 +7,10 @@ var firstCardClickedImage = null;
 var secondCardClickedImage = null;
 var max_matches = 9;
 var attempts = 0;
+var games_played = 0;
 
 function initializeApp(){
-  $('.lfz-card').on('click', handleCardClick);
+  $('.back').on('click', handleCardClick);
 }
 
 function handleCardClick( event ) {
@@ -22,9 +23,10 @@ function handleCardClick( event ) {
     firstCardClickedImage = $(firstCardClicked).siblings()[0];
     secondCardClickedImage = $(secondCardClicked).siblings()[0];
     if ($(firstCardClickedImage).attr('class') === $(secondCardClickedImage).attr('class')) {
-      matches += 1;
+      matches+=1;
       console.log('cards match, match number is now: ', matches);
       if (matches == max_matches) {
+        games_played+=1;
         var modal = document.getElementById('modal');
         $(modal).show();
         var span = document.getElementsByClassName('close')[0];
@@ -36,6 +38,7 @@ function handleCardClick( event ) {
       secondCardClicked = null;
     } else {
       setTimeout(function () {
+        attempts+=1;
         $(firstCardClicked).toggleClass('hidden', false);
         $(secondCardClicked).toggleClass('hidden', false);
         firstCardClicked = null;
@@ -43,4 +46,12 @@ function handleCardClick( event ) {
       }, 1500);
     }
   }
+}
+
+function calculateAccuracy(){
+
+}
+
+function displayStats(){
+
 }
