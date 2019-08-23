@@ -1,21 +1,202 @@
 h1 {
-  font-family: Geneva;
+  font-family: 'Press Start 2P', cursive;
   color: rgb(196, 61, 106);
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   text-shadow: 0 3px 6px white;
+  font-weight: 400;
+  margin: 0;
+  line-height: 0;
+  animation: glitch1 2.5s infinite;
+}
+
+h1:nth-child(2) {
+  color: #67f3da;
+  animation: glitch2 2.5s infinite;
+}
+
+h1:nth-child(3) {
+  color: #f16f6f;
+  animation: glitch3 2.5s infinite;
+}
+
+@keyframes glitch1 {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  7% {
+    transform: skew(-0.5deg, -0.9deg);
+    opacity: 0.75;
+  }
+  10% {
+    transform: none;
+    opacity: 1;
+  }
+  27% {
+    transform: none;
+    opacity: 1;
+  }
+  30% {
+    transform: skew(0.8deg, -0.1deg);
+    opacity: 0.75;
+  }
+  35% {
+    transform: none;
+    opacity: 1;
+  }
+  52% {
+    transform: none;
+    opacity: 1;
+  }
+  55% {
+    transform: skew(-1deg, 0.2deg);
+    opacity: 0.75;
+  }
+  50% {
+    transform: none;
+    opacity: 1;
+  }
+  72% {
+    transform: none;
+    opacity: 1;
+  }
+  75% {
+    transform: skew(0.4deg, 1deg);
+    opacity: 0.75;
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes glitch2 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(-2px, -3px);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(-5px, -2px);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(-5px, -1px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(-2px, -6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+}
+
+@keyframes glitch3 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(2px, 3px);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(5px, 2px);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(5px, 1px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(2px, 6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
 }
 
 header {
   border-collapse: separate;
   border-spacing: 10px;
+  padding: 30px;
+  vertical-align: center;
 }
 
 body {
   height: 100vh;
-  background-image: url("../images/memorymatchwallpaper.png");
+  background-image: url("../images/movingbackground.gif");
   background-size: cover;
-  font-family: Geneva;
+  font-family: 'Press Start 2P', cursive;
   color: rgb(196, 61, 106);
 }
 
@@ -33,14 +214,7 @@ main {
   border: black;
   display: inline-block;
   height: 75%;
-  width: 75%;
-}
-
-h3 {
-  display: flex;
-  text-shadow: 0 0 2px white;
-  font-size: 20px;
-  justify-content: center;
+  width: 77%;
 }
 
 #modal {
@@ -71,7 +245,8 @@ h3 {
 
 .close {
   color: black;
-  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
   font-weight: bold;
   top: 5px;
   right: 15px;
@@ -94,16 +269,17 @@ h3 {
 .box {
   width: 15%;
   position: relative;
-  height: 25%;
+  height: 23%;
+  transition: transform .2s;
 }
 
 .stats-bar-section {
   border-radius: 20px;
   background-color: whitesmoke;
   border: 0.5px solid black;
-  opacity: 0.95;
+  opacity: 0.85;
   text-shadow: 0 4px 3px rgb(206, 205, 205);
-  font-size: 20px;
+  font-size: 15px;
   width: 220px;
   height: 70px;
   display: flex;
@@ -111,6 +287,11 @@ h3 {
   justify-content: space-around;
   align-items: center;
   margin-top: 5px;
+  transition: 0.3s;
+}
+
+.stats-bar-section:hover {
+  opacity: 10;
 }
 
 .back {
@@ -118,55 +299,59 @@ h3 {
   background-size: contain;
   position: absolute;
   box-sizing: border-box;
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
   cursor: pointer;
 }
 
-.css-logo, .docker-logo, .html-logo, .git-logo, .js-logo, .mysql-logo, .node-logo, .php-logo, .react-logo {
+.box:hover {
+  transform: scale(1.15);
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
   position: absolute;
   box-sizing: border-box;
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
   background-size: contain;
   cursor: pointer;
   z-index: -1;
 }
 
-.css-logo {
-  background-image: url("../images/css-logo.png");
+.card1 {
+  background-image: url("../images/card1.jpg");
 }
 
-.docker-logo {
-  background-image: url("../images/docker-logo.jpg");
+.card2 {
+  background-image: url("../images/card2.jpg");
 }
 
-.git-logo {
-    background-image: url("../images/gitHub-logo.png");
+.card3 {
+    background-image: url("../images/card3.jpg");
 }
 
-.html-logo {
-    background-image: url("../images/html-logo.png");
+.card4 {
+    background-image: url("../images/card4.jpg");
 }
 
-.js-logo {
-    background-image: url("../images/js-logo.png");
+.card5 {
+    background-image: url("../images/card5.jpg");
 }
 
-.mysql-logo {
-    background-image: url("../images/mysql-logo.jpg");
+.card6 {
+    background-image: url("../images/card6.png");
 }
 
-.node-logo {
-    background-image: url("../images/node-logo.png");
+.card7 {
+    background-image: url("../images/card7.jpeg");
 }
 
-.php-logo {
-    background-image: url("../images/php-logo.jpeg");
+.card8 {
+    background-image: url("../images/card8.jpg");
 }
 
-.react-logo {
-    background-image: url("../images/react-logo.png");
+.card9 {
+    background-image: url("../images/card9.jpg");
 }
 
 .hidden {
