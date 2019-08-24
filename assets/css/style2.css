@@ -257,7 +257,7 @@ main {
 }
 
 .modal-content1 p {
-  text-align: center;
+  top: 50px;
 }
 
 .choice1 {
@@ -322,7 +322,7 @@ main {
 
 .modal1-image {
   top: 110px;
-  right: 40px;
+  right: 90px;
   width: 100px;
   height: 100px;
   position: absolute;
