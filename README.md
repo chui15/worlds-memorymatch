@@ -6,7 +6,6 @@ Worlds Memory Match is a musical artist-themed matching game in which a player a
 
 - JavaScript
 - jQuery
-- MySQL
 - HTML5
 - CSS3
 - AWS EC2
