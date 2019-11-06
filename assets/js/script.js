@@ -35,6 +35,7 @@ function initializeApp(){
 
 function clickHandlers(){
   $('.close2').on('click', function () {
+    var modal2 = document.getElementById('modal2');
     $(modal2).hide();
     resetStats();
   });
@@ -73,7 +74,7 @@ function handleCardClick( event ) {
         $(secondCardClicked).toggleClass('hidden', false);
         firstCardClicked = null;
         secondCardClicked = null;
-      }, 1000);
+      }, 700);
     }
   }
 }
@@ -93,7 +94,7 @@ function resetStats(){
   $('.stats-bar-section:nth-child(5)').text(attempts);
   $('.stats-bar-section:nth-child(7)').text(accuracy);
   flipAllCardsBack();
-  shuffleDeck(images_array);
+  // shuffleDeck(images_array);
 }
 
 function flipAllCardsBack(){
