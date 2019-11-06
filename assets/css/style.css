@@ -1,1 +1,73 @@
+h1 {
+  font-family: 'Times New Roman';
+  font-size: 40px;
+  text-align: center;
+}
 
+header {
+  border: 1px solid black;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.div1 {
+  height: 20px;
+}
+
+.stats-divider {
+  height: 10px;
+}
+
+body {
+  background-image: url("/assets/images/lfz-background.jpg");
+}
+
+aside {
+  display: inline-block;
+  width: 22%;
+  height: 80%;
+  padding: 10px;
+}
+main {
+  display: inline-block;
+  width: 75%;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: -53%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  border: 0.5px solid black;
+  float: right;
+  padding: 130px;
+}
+
+.stats-bar-section {
+  background-color: lightskyblue;
+  border: 0.5px solid black;
+  font-size: 20px;
+  width: 250px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+    background-image: url('/assets/images/lfz-card.jpg');
+    box-sizing: border-box;
+    height: 30%;
+    width: 15%;
+}
+.image-match {
+
+}
