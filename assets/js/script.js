@@ -31,6 +31,7 @@ function firstChoice(){
 
 function initializeApp(){
   clickHandlers();
+  newDeck();
 }
 
 function clickHandlers(){
@@ -94,7 +95,6 @@ function resetStats(){
   $('.stats-bar-section:nth-child(5)').text(attempts);
   $('.stats-bar-section:nth-child(7)').text(accuracy);
   flipAllCardsBack();
-  // shuffleDeck(images_array);
 }
 
 function flipAllCardsBack(){
@@ -112,4 +112,16 @@ function flipAllCardsBack(){
 //     array[randomNumber] = spotHolder;
 //   }
 //   return array;
+// }
+
+// function shuffleDeck(array) {
+//   for (var j, x, i = array.length; i; j = parseInt(Math.random() * i), x = array[--i], array[i] = array[j], array[j] = x);
+//   return array;
+// };
+
+// function newDeck(){
+//   var newArray = shuffleDeck(images_array);
+//   for (var i = 0; i < newArray.length; i++){
+//     $('#container').append(newArray[i]);
+//   }
 // }
