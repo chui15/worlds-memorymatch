@@ -31,7 +31,7 @@ function firstChoice(){
 
 function initializeApp(){
   clickHandlers();
-  newDeck();
+  // newDeck();
 }
 
 function clickHandlers(){
@@ -41,6 +41,12 @@ function clickHandlers(){
     resetStats();
   });
   $('.back').on('click', handleCardClick);
+  $('.pause').on('click', function(){
+    var audio = document.getElementsByTagName('audio')[0];
+    audio.pause();
+    var audio2 = document.getElementsByTagName('audio')[1];
+    audio2.pause();
+  })
 }
 
 function handleCardClick( event ) {

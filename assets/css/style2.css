@@ -352,6 +352,7 @@ main {
 }
 
 #container {
+  margin-top: 10px;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -366,21 +367,29 @@ main {
   transition: transform .2s;
 }
 
-.stats-bar-section {
+.stats-bar-section, .pause {
   border-radius: 20px;
   background-color: whitesmoke;
   border: 0.5px solid black;
   opacity: 0.85;
   text-shadow: 0 4px 3px rgb(206, 205, 205);
-  font-size: 15px;
-  width: 220px;
-  height: 70px;
+  font-size: 13px;
+  width: 210px;
+  height: 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 10px;
   transition: 0.3s;
+}
+
+.pause {
+  font-size: 12px;
+}
+
+.pause:hover {
+  cursor: pointer;
 }
 
 .stats-bar-section:hover {
@@ -395,6 +404,7 @@ main {
   height: 130px;
   width: 130px;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .back-2 {
@@ -414,6 +424,7 @@ main {
   background-size: contain;
   cursor: pointer;
   z-index: -1;
+  border-radius: 20px;
 }
 
 .card1 {
