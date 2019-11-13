@@ -494,9 +494,6 @@ main {
 }
 
 @media (min-width: 812px){
-  * {
-    overflow: hidden;
-  }
 
   aside {
     height: 45%;
@@ -504,10 +501,6 @@ main {
 
   #modal1 {
     padding-top: 50px;
-  }
-
-  .box:hover {
-  transform: none;
   }
 
   .stats-bar-section, .pause {
