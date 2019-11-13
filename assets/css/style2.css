@@ -26,10 +26,6 @@ and (orientation : landscape) {
     height: 60%;
   }
 
-  .modal-content1 {
-    top: 25%;
-  }
-
   .stats-bar-section {
     width: 90px;
   }
@@ -43,7 +39,8 @@ and (orientation : landscape) {
     height: 100px;
     width: 90px;
     z-index: -1;
-    border-radius: 20px;
+    border-radius: 15px;
+    border-spacing: 10px;
     padding: 2px;
   }
 
@@ -51,6 +48,7 @@ and (orientation : landscape) {
     height: 100px;
     width: 80px;
     padding: 2px;
+    border-spacing: 10px;
   }
 
  }
@@ -458,7 +456,7 @@ main {
   height: 130px;
   width: 130px;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .back-2 {
@@ -478,7 +476,7 @@ main {
   background-size: contain;
   cursor: pointer;
   z-index: -1;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .card1 {
