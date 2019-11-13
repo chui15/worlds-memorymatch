@@ -492,3 +492,18 @@ main {
     margin-left: 30px;
   }
 }
+
+@media (min-width: 812px){
+  aside {
+    height: 45%;
+  }
+
+  #modal1 {
+    padding-top: 50px;
+  }
+
+  .box:hover {
+  transform: none;
+  }
+
+}
