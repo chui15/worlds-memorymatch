@@ -577,7 +577,7 @@ and (max-device-width : 667px) {
   }
 
   .stats-bar-section, .pause {
-    font-size: 12px;
+    font-size: 11px;
     width: 170px;
     margin-left: 48px;
   }
