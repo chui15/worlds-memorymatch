@@ -50,7 +50,6 @@ function clickHandlers(){
 }
 
 function handleCardClick( event ) {
-  console.log(event);
   $(event.currentTarget).toggleClass('hidden', true);
   if (!firstCardClicked) {
     firstCardClicked = $(event.currentTarget);
@@ -61,7 +60,6 @@ function handleCardClick( event ) {
     if ($(firstCardClickedImage).attr('class') === $(secondCardClickedImage).attr('class')) {
       matches+=1;
       calculateAccuracy();
-      console.log('cards match, match number is now: ', matches);
       attempts += 1;
       calculateAccuracy();
       $('.stats-bar-section:nth-child(5)').text(attempts);
@@ -76,7 +74,6 @@ function handleCardClick( event ) {
         attempts+=1;
         calculateAccuracy();
         $('.stats-bar-section:nth-child(5)').text(attempts);
-        console.log('the number of attempts is now: ', attempts);
         $(firstCardClicked).toggleClass('hidden', false);
         $(secondCardClicked).toggleClass('hidden', false);
         firstCardClicked = null;

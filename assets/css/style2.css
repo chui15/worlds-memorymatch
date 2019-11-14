@@ -258,14 +258,6 @@ main {
   top: 50px;
 }
 
-.warning {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 13px;
-  text-shadow: 0 1px 5px white;
-  opacity: 1;
-  padding: 15%;
-}
-
 .choice1 {
   color: rgb(196, 61, 106);
   font-family: 'Press Start 2P', cursive;
@@ -472,7 +464,8 @@ main {
   display:none;
 }
 
-@media (min-width: 736px) and (max-width: 1100px){
+/* iPhone 6, 7, 8 landscape */
+@media (min-width: 667px) and (max-width: 1100px){
 
   h1 {
     font-size: 20px;
@@ -502,15 +495,72 @@ main {
     overflow-y: hidden;
   }
 
-  .warning {
-    font-size: 18px;
-    padding: 10px;
+}
+
+/* iPhone 6, 7, 8 portrait  */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+  header {
+    margin-top: 90px;
   }
 
+  h1 {
+    font-size: 27px;
+  }
 
+  #container {
+     overflow-x: hidden;
+     overflow-y: hidden;
+     margin-top: 110px;
+     height: 100%;
+     margin-left: 150px;
+  }
+
+  .modal-content1 {
+    top: 30%;
+    width: 40%;
+  }
+
+  aside {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 16px;
+  }
+
+  .stats-bar-section, .pause {
+    height: 18%;
+    padding: 5%;
+    font-size: 25px;
+  }
+
+  .box {
+    width: 190px;
+    height: 190px;
+  }
+
+  .box:hover{
+    transform: none;
+  }
+
+  .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+    height: 190px;
+    width: 190px;
+    z-index: -1;
+    border-radius: 15px;
+    padding: 2px;
+  }
+
+  .back, .back-2 {
+    height: 190px;
+    width: 190px;
+    padding: 2px;
+  }
 
 }
 
+/* iPhone X landscape */
 @media(min-width: 812px) and (max-width: 1100px){
 
   aside {
@@ -541,8 +591,73 @@ main {
     overflow-y: hidden;
   }
 
-  .warning {
-    font-size: 15px;
+}
+
+/* iPhone X in portrait  */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+
+  header {
+    margin-top: 100px;
   }
 
-}
+  h1.glitch {
+    font-size: 27px;
+  }
+
+  main {
+    height: 95%;
+  }
+
+   #container {
+     overflow-x: hidden;
+     overflow-y: hidden;
+     margin-top: 110px;
+     margin-left: 100px;
+     height: 80%;
+     margin-right: 10px;
+   }
+
+   .modal-content1 {
+     height: 15%;
+     width: 35%;
+   }
+
+   aside {
+     margin-top: 60px;
+     height: 48%;
+   }
+
+   .stats-bar-section, .pause {
+     font-size: 18px;
+     margin-left: 0px;
+     width: 250px;
+   }
+
+   .box {
+    width: 200px;
+    height: 200px;
+  }
+
+  .box:hover{
+    transform: none;
+  }
+
+  .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+    height: 200px;
+    width: 200px;
+    z-index: -1;
+    border-radius: 15px;
+    padding: 2px;
+  }
+
+  .back, .back-2 {
+    height: 200px;
+    width: 200px;
+    padding: 2px;
+  }
+
+  }
