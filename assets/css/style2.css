@@ -258,6 +258,14 @@ main {
   top: 50px;
 }
 
+.warning {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 13px;
+  text-shadow: 0 1px 5px white;
+  opacity: 1;
+  padding: 15%;
+}
+
 .choice1 {
   color: rgb(196, 61, 106);
   font-family: 'Press Start 2P', cursive;
@@ -493,6 +501,14 @@ main {
     overflow-x: hidden;
     overflow-y: hidden;
   }
+
+  .warning {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+
+
 }
 
 @media(min-width: 812px) and (max-width: 1100px){
@@ -505,8 +521,13 @@ main {
     padding-top: 50px;
   }
 
+  .modal-content1 {
+    margin: 1%;
+    left: 20%;
+  }
+
   .stats-bar-section, .pause {
-    font-size: 10px;
+    font-size: 12px;
     width: 170px;
     margin-left: 48px;
   }
@@ -518,6 +539,10 @@ main {
   body {
     overflow-x: hidden;
     overflow-y: hidden;
+  }
+
+  .warning {
+    font-size: 15px;
   }
 
 }
