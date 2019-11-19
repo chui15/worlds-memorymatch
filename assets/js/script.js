@@ -10,7 +10,21 @@ var attempts = 0;
 var games_played = 0;
 var accuracy = 0;
 var images_array = ['card1', 'card2', 'card3', 'card4', 'card5', 'card6', 'card7', 'card8', 'card9'];
-//1) shuffle, 2) concat/double, 3)re-shuffle, 4) jQuery new box 5) for loop to assign to new boxes
+var shuffledAgain;
+
+function shuffleDeck(array){
+  return array.sort(() => 0.5 - Math.random());
+}
+
+function newDeck() {
+  var newArray = shuffleDeck(images_array);
+  var shuffledArray = images_array.concat(newArray);
+  shuffledAgain = shuffleDeck(shuffledArray);
+  for (var i = 0; i < shuffledAgain.length; i++){
+    var card = $('<div>').addClass(shuffledAgain[i]);
+    $('.box'+i).append(card);
+  }
+}
 
 function firstChoice(){
   var modal1 = document.getElementById('modal1');
@@ -31,7 +45,9 @@ function firstChoice(){
 
 function initializeApp(){
   clickHandlers();
-  // newDeck();
+  firstChoice();
+  var startingDeck = shuffleDeck(images_array);
+  newDeck(startingDeck);
 }
 
 function clickHandlers(){
@@ -78,7 +94,7 @@ function handleCardClick( event ) {
         $(secondCardClicked).toggleClass('hidden', false);
         firstCardClicked = null;
         secondCardClicked = null;
-      }, 700);
+      }, 650);
     }
   }
 }
@@ -98,28 +114,9 @@ function resetStats(){
   $('.stats-bar-section:nth-child(5)').text(attempts);
   $('.stats-bar-section:nth-child(7)').text(accuracy);
   flipAllCardsBack();
+  newDeck();
 }
 
 function flipAllCardsBack(){
   $('.back').toggleClass('hidden', false);
 }
-
-// function shuffleDeck(array){
-//   var randomNumber;
-//   var arrayLength = images_array.length-1;
-//   var spotHolder;
-//   for (var i = 0; i < arrayLength; i++){
-//     randomNumber = Math.floor(Math.random() * arrayLength);
-//     spotHolder = array[i];
-//     array[i] = array[randomNumber];
-//     array[randomNumber] = spotHolder;
-//   }
-//   return array;
-// }
-
-// function newDeck(){
-//   var newArray = shuffleDeck(images_array);
-//   for (var i = 0; i < newArray.length; i++){
-//     $('#container').append(newArray[i]);
-//   }
-// }
