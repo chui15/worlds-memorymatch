@@ -45,7 +45,6 @@ function firstChoice(){
 
 function initializeApp(){
   clickHandlers();
-  firstChoice();
   var startingDeck = shuffleDeck(images_array);
   newDeck(startingDeck);
 }
