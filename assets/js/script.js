@@ -117,11 +117,6 @@ function flipAllCardsBack(){
 //   return array;
 // }
 
-// function shuffleDeck(array) {
-//   for (var j, x, i = array.length; i; j = parseInt(Math.random() * i), x = array[--i], array[i] = array[j], array[j] = x);
-//   return array;
-// };
-
 // function newDeck(){
 //   var newArray = shuffleDeck(images_array);
 //   for (var i = 0; i < newArray.length; i++){

@@ -500,6 +500,10 @@ main {
     overflow-y: hidden;
   }
 
+  .box:hover {
+    transform: none;
+  }
+
   #container {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -633,6 +637,10 @@ and (orientation: portrait) {
     height: 100px;
     width: 100px;
     padding: 15px;
+  }
+
+  .box:hover {
+    transform: none;
   }
 
 }
