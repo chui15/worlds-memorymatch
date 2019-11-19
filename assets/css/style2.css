@@ -715,3 +715,36 @@ and (orientation : portrait) {
   }
 
   }
+
+/* Desktop responsive */
+@media only screen and (max-width: 970px){
+  .box {
+    width: 110px;
+    height: 110px;
+  }
+
+  aside {
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+
+  .stats-bar-section, .pause {
+    height: 15%;
+    font-size: 15px;
+  }
+
+  .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+    height: 110px;
+    width: 110px;
+    z-index: -1;
+    border-radius: 15px;
+    padding: 15px;
+  }
+
+   .back, .back-2 {
+    height: 110px;
+    width: 110px;
+    padding: 15px;
+  }
+}
