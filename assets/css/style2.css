@@ -300,7 +300,7 @@ main {
   height: 100%;
   overflow: auto;
   background-color: darkgray;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .modal-content2 {
