@@ -17,6 +17,9 @@ function shuffleDeck(array){
 }
 
 function newDeck() {
+  for (var j = 1; j < 17; j++){
+    $('.card'+j).remove();
+  }
   var newArray = shuffleDeck(images_array);
   var shuffledArray = images_array.concat(newArray);
   shuffledAgain = shuffleDeck(shuffledArray);
@@ -70,8 +73,8 @@ function handleCardClick( event ) {
     firstCardClicked = $(event.currentTarget);
   } else {
     secondCardClicked = $(event.currentTarget);
-    firstCardClickedImage = $(firstCardClicked).siblings()[0];
-    secondCardClickedImage = $(secondCardClicked).siblings()[0];
+    firstCardClickedImage = $(firstCardClicked).siblings();
+    secondCardClickedImage = $(secondCardClicked).siblings();
     if ($(firstCardClickedImage).attr('class') === $(secondCardClickedImage).attr('class')) {
       matches+=1;
       calculateAccuracy();
@@ -105,6 +108,11 @@ function calculateAccuracy(){
 }
 
 function resetStats(){
+  firstCardClicked = null;
+  secondCardClicked = null;
+  matches = null;
+  firstCardClickedImage = null;
+  secondCardClickedImage = null;
   matches = 0;
   attempts = 0;
   accuracy = 0;
