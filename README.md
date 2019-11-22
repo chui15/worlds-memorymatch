@@ -12,7 +12,7 @@ Worlds Memory Match is a musical artist-themed matching game in which a player a
 
 ## Preview
 
-![SGT React](assets/images/memorymatch.gif)
+![Worlds Memory Match](assets/images/memorymatch.gif)
 
 ## Live Demo
 
