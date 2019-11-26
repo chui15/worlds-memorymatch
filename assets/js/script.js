@@ -72,6 +72,7 @@ function handleCardClick( event ) {
   if (!firstCardClicked) {
     firstCardClicked = $(event.currentTarget);
   } else {
+    $('.back').off();
     secondCardClicked = $(event.currentTarget);
     firstCardClickedImage = $(firstCardClicked).siblings();
     secondCardClickedImage = $(secondCardClicked).siblings();
@@ -81,6 +82,7 @@ function handleCardClick( event ) {
       attempts += 1;
       calculateAccuracy();
       $('.stats-bar-section:nth-child(5)').text(attempts);
+      $('.back').on('click', handleCardClick);
       if (matches === max_matches) {
         var modal2 = document.getElementById('modal2');
         $(modal2).show();
@@ -96,6 +98,7 @@ function handleCardClick( event ) {
         $(secondCardClicked).toggleClass('hidden', false);
         firstCardClicked = null;
         secondCardClicked = null;
+        $('.back').on('click', handleCardClick);
       }, 650);
     }
   }
