@@ -64,6 +64,8 @@ function clickHandlers(){
     audio.pause();
     var audio2 = document.getElementsByTagName('audio')[1];
     audio2.pause();
+    $('.pause').toggleClass('paused');
+    $('.pause').off();
   })
 }
 
@@ -84,8 +86,10 @@ function handleCardClick( event ) {
       $('.stats-bar-section:nth-child(5)').text(attempts);
       $('.back').on('click', handleCardClick);
       if (matches === max_matches) {
-        var modal2 = document.getElementById('modal2');
-        $(modal2).show();
+        setTimeout(()=> {
+          var modal2 = document.getElementById('modal2');
+          $(modal2).show();
+        }, 2500);
       }
       firstCardClicked = null;
       secondCardClicked = null;

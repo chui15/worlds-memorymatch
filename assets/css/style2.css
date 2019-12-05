@@ -394,6 +394,14 @@ main {
   color: rgb(104, 97, 97);
 }
 
+.paused {
+  opacity: 0.5;
+}
+
+.paused:hover {
+  cursor: auto;
+}
+
 .stats-bar-section:hover, .stats-bar-section-title:hover {
   opacity: 10;
 }
