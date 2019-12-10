@@ -478,129 +478,6 @@ main {
   display:none;
 }
 
-/* iPhone 6, 7, 8 landscape */
-@media (min-width: 667px) and (max-width: 812px) and (orientation: landscape){
-
-  h1 {
-    font-size: 20px;
-  }
-
-  .box0, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17 {
-    width: 110px;
-  }
-
-  .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
-    height: 90px;
-    width: 90px;
-    z-index: -1;
-    border-radius: 15px;
-    padding: 2px;
-  }
-
-  .back, .back-2 {
-    height: 90px;
-    width: 90px;
-    padding: 2px;
-  }
-
-  body {
-    margin-left: 30px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
-  main {
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
-  .box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover, .box10:hover, .box11:hover, .box12:hover, .box13:hover, .box14:hover, .box15:hover, .box16:hover, .box17:hover {
-    transform: none;
-  }
-
-  #container {
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
-}
-
-/* iPhone 6, 7, 8 portrait  */
-@media only screen
-and (min-width : 375px)
-and (max-width : 667px)
-and (orientation: portrait) {
-
-  header {
-    margin-top: 90px;
-  }
-
-  h1 {
-    font-size: 27px;
-  }
-
-  main {
-    height: 85%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
-  body {
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
-  #container {
-     overflow-x: hidden;
-     overflow-y: hidden;
-     height: 100%;
-     margin-left: 90px;
-  }
-
-  .modal-content1 {
-    top: 30%;
-    width: 40%;
-  }
-
-  aside {
-    margin-top: 50px;
-    margin-left: 15px;
-    margin-right: 5px;
-    height: 60%;
-  }
-
-  .stats-bar-section, .pause, .stats-bar-section-title {
-    height: 18%;
-    padding: 5%;
-    font-size: 15px;
-  }
-
-  .box0, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17 {
-    width: 190px;
-    height: 190px;
-    margin: 10px;
-  }
-
-  .box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover, .box10:hover, .box11:hover, .box12:hover, .box13:hover, .box14:hover, .box15:hover, .box16:hover, .box17:hover {
-    transform: none;
-  }
-
-  .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
-    height: 190px;
-    width: 190px;
-    z-index: -1;
-    border-radius: 15px;
-    padding: 5px;
-  }
-
-  .back, .back-2 {
-    height: 190px;
-    width: 190px;
-    padding: 5px;
-  }
-
-}
-
 /* iPad in portrait */
 @media only screen
 and (min-width : 768px)
@@ -617,27 +494,28 @@ and (orientation : portrait) {
   }
 
   #container {
-    height: 108%;
+    height: 118%;
     margin-left: 70px;
   }
 
   .box0, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17 {
-    width: 155px;
+    width: 170px;
     margin-top: 8%;
     margin-right: 3%;
+    margin-bottom: 10%;
   }
 
   .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
-    height: 155px;
-    width: 155px;
+    height: 170px;
+    width: 170px;
     z-index: -1;
     border-radius: 15px;
     padding: 20px;
   }
 
    .back, .back-2 {
-    height: 155px;
-    width: 155px;
+    height: 170px;
+    width: 170px;
     padding: 20px;
   }
 
@@ -774,3 +652,126 @@ and (orientation : portrait) {
   }
 
   }
+
+  /* iPhone 6, 7, 8 landscape */
+@media (min-width: 667px) and (max-width: 812px) and (orientation: landscape){
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .box0, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17 {
+    width: 110px;
+  }
+
+  .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+    height: 90px;
+    width: 90px;
+    z-index: -1;
+    border-radius: 15px;
+    padding: 2px;
+  }
+
+  .back, .back-2 {
+    height: 90px;
+    width: 90px;
+    padding: 2px;
+  }
+
+  body {
+    margin-left: 30px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  main {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover, .box10:hover, .box11:hover, .box12:hover, .box13:hover, .box14:hover, .box15:hover, .box16:hover, .box17:hover {
+    transform: none;
+  }
+
+  #container {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+}
+
+/* iPhone 6, 7, 8 portrait  */
+@media only screen
+and (min-width : 375px)
+and (max-width : 667px)
+and (orientation: portrait) {
+
+  header {
+    margin-top: 90px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  main {
+    height: 85%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  #container {
+     overflow-x: hidden;
+     overflow-y: hidden;
+     height: 100%;
+     margin-left: 90px;
+  }
+
+  .modal-content1 {
+    top: 30%;
+    width: 40%;
+  }
+
+  aside {
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 5px;
+    height: 60%;
+  }
+
+  .stats-bar-section, .pause, .stats-bar-section-title {
+    height: 18%;
+    padding: 5%;
+    font-size: 15px;
+  }
+
+  .box0, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17 {
+    width: 190px;
+    height: 190px;
+    margin: 10px;
+  }
+
+  .box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover, .box10:hover, .box11:hover, .box12:hover, .box13:hover, .box14:hover, .box15:hover, .box16:hover, .box17:hover {
+    transform: none;
+  }
+
+  .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+    height: 190px;
+    width: 190px;
+    z-index: -1;
+    border-radius: 15px;
+    padding: 5px;
+  }
+
+  .back, .back-2 {
+    height: 190px;
+    width: 190px;
+    padding: 5px;
+  }
+
+}
