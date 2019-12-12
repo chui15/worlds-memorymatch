@@ -488,35 +488,38 @@ and (orientation : portrait) {
   }
 
   aside {
-    height: 55%;
-    margin-top: 8%;
+    height: 60%;
+    margin-top: 4%;
     margin-left: 2%;
   }
 
   #container {
-    height: 118%;
-    margin-left: 70px;
+    height: 130%;
+    margin-left: 50px;
+    margin-top: -45px;
   }
 
   .box0, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17 {
-    width: 170px;
+    width: 185px;
     margin-top: 8%;
     margin-right: 3%;
     margin-bottom: 10%;
   }
 
   .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
-    height: 170px;
-    width: 170px;
+    height: 185px;
+    width: 185px;
     z-index: -1;
     border-radius: 15px;
     padding: 20px;
+    border-spacing: 50px;
   }
 
    .back, .back-2 {
-    height: 170px;
-    width: 170px;
+    height: 185px;
+    width: 185px;
     padding: 20px;
+    border-spacing: 50px;
   }
 
   .box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover, .box10:hover, .box11:hover, .box12:hover, .box13:hover, .box14:hover, .box15:hover, .box16:hover, .box17:hover {
@@ -608,7 +611,7 @@ and (orientation : portrait) {
      overflow-y: hidden;
      margin-top: 50px;
      margin-left: 100px;
-     height: 85%;
+     height: 90%;
      margin-right: 10px;
    }
 
@@ -619,7 +622,7 @@ and (orientation : portrait) {
 
    aside {
      margin-top: 100px;
-     height: 50%;
+     height: 52%;
    }
 
    .stats-bar-section, .pause, .stats-bar-section-title {
@@ -629,8 +632,8 @@ and (orientation : portrait) {
    }
 
    .box0, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17 {
-    width: 180px;
-    height: 180px;
+    width: 188px;
+    height: 188px;
   }
 
   .box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover, .box10:hover, .box11:hover, .box12:hover, .box13:hover, .box14:hover, .box15:hover, .box16:hover, .box17:hover {
@@ -638,23 +641,23 @@ and (orientation : portrait) {
   }
 
   .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
-    height: 180px;
-    width: 180px;
+    height: 188px;
+    width: 188px;
     z-index: -1;
     border-radius: 15px;
     padding: 2px;
   }
 
   .back, .back-2 {
-    height: 180px;
-    width: 180px;
+    height: 188px;
+    width: 188px;
     padding: 2px;
   }
 
   }
 
   /* iPhone 6, 7, 8 landscape */
-@media (min-width: 667px) and (max-width: 812px) and (orientation: landscape){
+@media only screen and (min-width: 667px) and (max-width: 812px) and (orientation: landscape){
 
   h1 {
     font-size: 20px;
@@ -665,16 +668,16 @@ and (orientation : portrait) {
   }
 
   .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
-    height: 90px;
-    width: 90px;
+    height: 110px;
+    width: 110px;
     z-index: -1;
     border-radius: 15px;
     padding: 2px;
   }
 
   .back, .back-2 {
-    height: 90px;
-    width: 90px;
+    height: 110px;
+    width: 110px;
     padding: 2px;
   }
 
