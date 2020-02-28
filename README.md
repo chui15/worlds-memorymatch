@@ -1,8 +1,8 @@
-# Worlds Memory Match
+# 💮💠 Worlds Memory Match
 
 Worlds Memory Match is a musical artist-themed matching game in which a player attempts to match the images contained on "playing cards".
 
-## Technologies Used
+## ✨ Technologies Used
 
 - JavaScript
 - jQuery
@@ -10,22 +10,22 @@ Worlds Memory Match is a musical artist-themed matching game in which a player a
 - CSS3
 - AWS EC2
 
-## Preview
+## 🔎 Preview
 
 ![Worlds Memory Match](assets/images/memorymatch.gif)
 
-## Live Demo
+## 🕹 Live Demo
 
 Try the application live at [https://worlds.christiehui.com]
 
-## Features
+## 💭 Features
 
 - User can select one of two themes to play the game with.
 - User can select two cards at a time with the goal of creating nine matching pairs.
 - User can view their stats in a side bar: attempts, accuracy, and number of games played.
 - User can restart the game and have a brand new game with a newly shuffled deck.
 
-## Development
+## 🔩 Development
 
 #### Getting Started
 
