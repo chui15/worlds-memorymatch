@@ -8,11 +8,11 @@ Worlds Memory Match is a musical artist-themed matching game in which a player a
 - jQuery
 - HTML5
 - CSS3
-- AWS EC2
+- Firebase
 
 ## 🔎 Preview
 
-![Worlds Memory Match](assets/images/memorymatch.gif)
+![Worlds Memory Match](./assets/images/memorymatch.gif)
 
 ## 🕹 Live Demo
 
