@@ -10,10 +10,6 @@ Worlds Memory Match is a musical artist-themed matching game in which a player a
 - CSS3
 - Firebase
 
-## 🔎 Preview
-
-![Worlds Memory Match](./assets/images/memorymatch.gif)
-
 ## 🕹 Live Demo
 
 Try the application live at [https://worlds.christiehui.com]
