@@ -8,7 +8,7 @@ Worlds Memory Match is a musical artist-themed matching game in which a player a
 - jQuery
 - HTML5
 - CSS3
-- Firebase
+- Netlify
 
 ## 🕹 Live Demo
 
